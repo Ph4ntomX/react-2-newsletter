@@ -29,10 +29,10 @@ function App() {
               <h3 className="card-title mb-3">Newsletter Subscription</h3>
               <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                  <input type="text" placeholder="Your Name" className="form-control" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                  <input type="text" placeholder="Your Name" className="form-control" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
                 </div>
                 <div className="mb-3">
-                  <input type="email" placeholder="Your Email" className="form-control" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                  <input type="email" placeholder="Your Email" className="form-control" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                 </div>
                 <button type="submit" className="btn btn-primary">Subscribe</button>
               </form>
